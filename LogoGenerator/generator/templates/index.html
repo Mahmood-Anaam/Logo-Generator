@@ -82,7 +82,7 @@
     <div class="container" data-bs-theme="dark">
       <div style="margin-top: 4%"></div>
    
-      <form action="{% url 'text2logogenerate' %}" method="POST" class="d-flex col-xs-2" style="width: 70%; margin: auto">
+      <form action="{% url 'text2logogenerate' %}" method="GET" class="d-flex col-xs-2" style="width: 70%; margin: auto">
         {% csrf_token %}
         <input
           id="prompt"
@@ -113,7 +113,7 @@
 
       <div style="margin-top: 4%"></div>
 
-      <div class="row row-cols-7 g-3">
+      <div class="row row-cols-1 g-3">
         
 
        <div style="display:none" id="spinner">

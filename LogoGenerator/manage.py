@@ -4,13 +4,18 @@ import os
 import sys
 
 
+
+
+
 def main():
     
 
     """Run administrative tasks."""
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "LogoGenerator.settings")
     try:
+        
         from django.core.management import execute_from_command_line
+        
     except ImportError as exc:
         raise ImportError(
             "Couldn't import Django. Are you sure it's installed and "
@@ -27,5 +32,16 @@ if __name__ == "__main__":
 
 #python -m venv .env
 #.env\Scripts\activate
+# cd Logo-Generator/LogoGenerator
+#source .env/bin/activate 
 #pip install -r requirements.txt
 #python manage.py runserver
+
+#pip3 uninstall torch
+#pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+#cd Logo-Generator/LogoGenerator
+#source .env/bin/activate 
+#python3 manage.py runserver 9000
+
+
